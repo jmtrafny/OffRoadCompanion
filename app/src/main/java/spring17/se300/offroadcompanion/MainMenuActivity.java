@@ -38,5 +38,5 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//change for awesome 2
+//change for awesome 2 3
 }
