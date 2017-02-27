@@ -14,3 +14,4 @@ public class InformationMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_information_menu);
     }
 }
+//Meeptest

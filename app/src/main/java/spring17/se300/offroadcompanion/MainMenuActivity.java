@@ -11,8 +11,6 @@ import spring17.se300.offroadcompanion.OrientationActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
 
-    //Please tell me this worked...?
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +38,5 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//edited online by james for testing
+//change for awesome 2 3
 }
