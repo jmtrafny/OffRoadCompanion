@@ -1,4 +1,4 @@
-package spring17.se300.betterorc;
+package spring17.se300.offroadcompanion;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
