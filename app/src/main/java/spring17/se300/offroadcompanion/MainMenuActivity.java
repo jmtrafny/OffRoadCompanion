@@ -1,4 +1,4 @@
-package spring17.se300.offroadcompanion;
+package spring17.se300.offroadcompanion.
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +10,8 @@ import spring17.se300.offroadcompanion.NavigationMenuActivity;
 import spring17.se300.offroadcompanion.OrientationActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
-
-    //Please tell me this worked...?
+    //IMMA MAKE A CHANGE!!!
+    //MAKE AMERICA GREAT AGAIN!
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
