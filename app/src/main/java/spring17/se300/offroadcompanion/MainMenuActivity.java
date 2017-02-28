@@ -13,6 +13,8 @@ public class MainMenuActivity extends AppCompatActivity {
 
     //Please tell me this worked...?
 
+    //Edited by Ed for testing
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
