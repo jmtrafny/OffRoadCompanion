@@ -14,4 +14,4 @@ public class InformationMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_information_menu);
     }
 }
-//Meeptest
+//Patrick Added a comment per the push-pull homework.
