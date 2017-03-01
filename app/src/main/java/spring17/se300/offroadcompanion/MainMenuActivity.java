@@ -1,21 +1,19 @@
 package spring17.se300.offroadcompanion;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
-import spring17.se300.offroadcompanion.InformationMenuActivity;
-import spring17.se300.offroadcompanion.NavigationMenuActivity;
-import spring17.se300.offroadcompanion.OrientationActivity;
-
-public class MainMenuActivity extends AppCompatActivity {
-
-    //Edited by Ed for testing
+public class MainMenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main_menu);
     }
 
@@ -40,5 +38,4 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//change for awesome 2 3
 }

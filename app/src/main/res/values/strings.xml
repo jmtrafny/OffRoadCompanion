@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">BetterORC</string>
+    <string name="app_name">Off Road Companion</string>
     <string name="MainMenuTextString">Welcome to the\nOFF ROAD COMPANION</string>
     <string name="NavigationButtonString">NAVIGATION</string>
     <string name="OrientationButtonString">ORIENTATION</string>
     <string name="InformationButtonString">INFORMATION</string>
     <string name="splashScreenText">Off Road Companion</string>
+    <string name="orientationTextView">No Data</string>
 </resources>
