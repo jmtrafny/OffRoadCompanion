@@ -24,7 +24,6 @@ public class OrientationActivity extends Activity implements SensorEventListener
     private float[] accelOutput;
     private float[] magOutput;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,9 +52,7 @@ public class OrientationActivity extends Activity implements SensorEventListener
     }
 
     private float[] orientation = new float[3];
-    public float[] getOrientation() {
-        return orientation;
-    }
+    public float[] getOrientation() { return orientation; }
 
     private float[] startOrientation = null;
     public float[] getStartOrientation() {
@@ -85,11 +82,10 @@ public class OrientationActivity extends Activity implements SensorEventListener
                     startOrientation = new float[orientation.length];
                     System.arraycopy(orientation, 0, startOrientation, 0, orientation.length);
                 }
-                float pitch = getOrientation()[1] - getStartOrientation()[1];
-                float roll = getOrientation()[2] - getStartOrientation()[2];
+                float roll = getOrientation()[1] - getStartOrientation()[1];
+                float pitch = getOrientation()[2] - getStartOrientation()[2];
                 orientationReadout.setText("Pitch: " + pitch + "\nRoll: " + roll);
             }
         }
     }
-
 }
