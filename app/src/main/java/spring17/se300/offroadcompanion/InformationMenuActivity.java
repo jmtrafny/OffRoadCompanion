@@ -15,3 +15,4 @@ public class InformationMenuActivity extends AppCompatActivity {
     }
 }
 //Patrick Added a comment per the push-pull homework.
+//Johny Done Goofed!!
