@@ -1,19 +1,14 @@
 package spring17.se300.offroadcompanion;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
-import java.util.Random;
 
 public class OrientationActivity extends Activity implements SensorEventListener {
 
@@ -59,7 +54,7 @@ public class OrientationActivity extends Activity implements SensorEventListener
         return startOrientation;
     }
 
-    public void zero_all() {
+    public void zeroButtonClicked() {
         startOrientation = null;
     }
 
