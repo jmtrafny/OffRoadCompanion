@@ -82,8 +82,13 @@ public class OrientationActivity extends Activity implements SensorEventListener
                     startOrientation = new float[orientation.length];
                     System.arraycopy(orientation, 0, startOrientation, 0, orientation.length);
                 }
-                float roll = getOrientation()[1] - getStartOrientation()[1];
-                float pitch = getOrientation()[2] - getStartOrientation()[2];
+                double roll = getOrientation()[1] - getStartOrientation()[1];
+                double pitch = getOrientation()[2] - getStartOrientation()[2];
+
+                // Radians to degrees
+                roll = (roll * 180)/Math.PI;
+                pitch = (pitch * 180)/Math.PI;
+
                 orientationReadout.setText("Pitch: " + pitch + "\nRoll: " + roll);
             }
         }
