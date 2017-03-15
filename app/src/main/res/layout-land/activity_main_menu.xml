@@ -43,8 +43,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/mainMenuButtonNavigation"
-                android:layout_weight="0.08"
                 android:onClick="navigationButtonClicked"
+                android:layout_weight="0.08"
                 />
 
             <Button

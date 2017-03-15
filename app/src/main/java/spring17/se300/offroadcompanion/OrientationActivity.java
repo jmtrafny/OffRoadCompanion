@@ -55,13 +55,20 @@ public class OrientationActivity extends Activity implements SensorEventListener
         return startOrientation;
     }
 
+    //Zero Clinometer
     public void zeroButtonClicked(View view) {
         startOrientation = null;
     }
 
+
+    //Set roll and pitch limit
+    //public void limitButtonClicked
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
+
+    //Calculation of roll and pitch
     @Override
     public void onSensorChanged(SensorEvent event) {
         if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
@@ -85,7 +92,7 @@ public class OrientationActivity extends Activity implements SensorEventListener
                 roll = (roll * 180)/Math.PI;
                 pitch = (pitch * 180)/Math.PI;
 
-                orientationReadout.setText("Pitch: " + pitch + "\nRoll: " + roll);
+                orientationReadout.setText("Pitch: " + (int) pitch + "\nRoll: " + (int) roll);
             }
         }
     }

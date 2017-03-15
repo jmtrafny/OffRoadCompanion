@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
     android:background="#000000">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="3">
 
-        <Button
-            android:text="Zero"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/ZeroButton"
-            android:onClick="zeroButtonClicked"
-            />
 
         <TextView
             android:text="@string/orientationTextView"
@@ -24,9 +19,36 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:id="@+id/accelerationText"
-            android:layout_weight="0.29"
-            android:textSize="36sp"
+            android:textSize="60sp"
             android:textColor="#FFFFFF"/>
 
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:weightSum="2">
+
+        <Button
+        android:text="Zero"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:id="@+id/ZeroButton"
+        android:onClick="zeroButtonClicked"/>
+
+        <Button
+            android:text="Limit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
 </LinearLayout>
