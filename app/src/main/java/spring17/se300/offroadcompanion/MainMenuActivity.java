@@ -5,15 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import spring17.se300.offroadcompanion.InformationMenuActivity;
-import spring17.se300.offroadcompanion.NavigationMenuActivity;
-import spring17.se300.offroadcompanion.OrientationActivity;
-
+/**
+ * Created by James Trafny on 2/28/2017.
+ *
+ * onCreate comes from android.os.Bundle and is called when the activity is created.
+ * navigationButtonClicked gets called when r.id.navigationButton sends a click event.
+ * orientationButtonClicked gets called when r.id.orientationButton sends a click event.
+ * informationButtonClicked gets called when r.id.informationButton sends a click event.
+ */
 public class MainMenuActivity extends AppCompatActivity {
-
-    //Please tell me this worked...?
-
-    //Edited by Ed for testing
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +42,4 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//edited online by james for testing
 }

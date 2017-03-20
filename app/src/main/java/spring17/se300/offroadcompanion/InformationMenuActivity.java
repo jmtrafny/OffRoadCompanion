@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * Created by jmtra on 2/20/2017.
+ * Created by James Trafny on 2/20/2017.
+ * Extending AppCompatActivity allows for backwards compatibility between APKs
+ * onCreate comes from android.os.Bundle and is called when the activity is created.
+ * trailButtonClicked gets called when r.id.trailButton sends a click event.
  */
 public class InformationMenuActivity extends AppCompatActivity {
 
@@ -23,5 +26,3 @@ public class InformationMenuActivity extends AppCompatActivity {
     }
 
 }
-//Patrick Added a comment per the push-pull homework.
-//Johny Done Goofed!!

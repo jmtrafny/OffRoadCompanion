@@ -9,7 +9,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-
+/**
+ * Created by James Trafny on 2/28/2017.
+ *
+ * This Class file generates a 3.5 second splash screen for use in advertising our logo and company.
+ * onCreate comes from android.os.Bundle and is called when the activity is created.
+ *
+ */
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
@@ -40,6 +46,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         };
         myThread.start();
-        // this is different again again
     }
 }
