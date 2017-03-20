@@ -27,7 +27,9 @@
 
         <activity android:name=".InformationMenuActivity">
 
+        </activity>
 
+        <activity android:name=".InformationPageActivity">
 
         </activity>
     </application>
