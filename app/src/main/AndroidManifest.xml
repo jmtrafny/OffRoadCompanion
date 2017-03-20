@@ -25,10 +25,12 @@
         <activity android:name=".OrientationActivity"
             android:screenOrientation="landscape" />
 
-        <activity android:name=".InformationMenuActivity">
+        <activity android:name=".InformationMenuActivity"/>
 
+        <activity android:name=".InformationPageActivity"/>
 
-//meh
+        <activity android:name=".LimitOrientation">
+
         </activity>
     </application>
 </manifest>

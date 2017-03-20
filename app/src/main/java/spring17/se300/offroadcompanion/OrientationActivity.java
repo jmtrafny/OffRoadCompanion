@@ -30,8 +30,8 @@ public class OrientationActivity extends Activity implements SensorEventListener
 
         setContentView(R.layout.activity_orientation);
 
-        orientationReadoutRoll = (TextView)findViewById(R.id.accelerationTextRoll);
-        orientationReadoutPitch = (TextView)findViewById(R.id.accelerationTextPitch);
+        orientationReadoutRoll = (TextView)findViewById(R.id.orientationReadoutRoll);
+        orientationReadoutPitch = (TextView)findViewById(R.id.orientationReadoutPitch);
 
         manager = (SensorManager)getSystemService(SENSOR_SERVICE);
         accelerometer = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);

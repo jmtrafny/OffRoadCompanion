@@ -14,7 +14,7 @@
         android:weightSum="10">
 
         <TextView
-            android:id="@+id/accelerationTextRoll"
+            android:id="@+id/orientationReadoutRoll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -22,7 +22,7 @@
             android:textSize="50sp" />
 
         <TextView
-            android:id="@+id/accelerationTextPitch"
+            android:id="@+id/orientationReadoutPitch"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
