@@ -13,37 +13,18 @@
         >
 
     <TextView
-        android:text="Limit vehicle roll to:"
+        android:id="@+id/TextViewLimitPitch"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="#FFFFFF"
         android:layout_weight="2"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textColor="#FFFFFF"
-        android:text="00.00"
-        android:layout_weight="2"/>
 
     <TextView
-        android:text="Limit pitch to:"
+        android:id="@+id/TextViewLimitRoll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="#FFFFFF"
-        android:layout_weight="2"/>
-
-
-    <EditText
-        android:id="@+id/editLimitPitch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textColor="#FFFFFF"
-        android:text="00.00"
         android:layout_weight="2"/>
 
     </LinearLayout>
