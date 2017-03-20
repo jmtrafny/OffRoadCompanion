@@ -1,6 +1,7 @@
 package spring17.se300.offroadcompanion;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -13,7 +14,8 @@ import android.widget.TextView;
 
 public class OrientationActivity extends Activity implements SensorEventListener {
 
-    TextView orientationReadout;
+    TextView orientationReadoutRoll;
+    TextView orientationReadoutPitch;
     private SensorManager manager;
     private Sensor accelerometer;
     private Sensor magnometer;
@@ -28,7 +30,8 @@ public class OrientationActivity extends Activity implements SensorEventListener
 
         setContentView(R.layout.activity_orientation);
 
-        orientationReadout = (TextView)findViewById(R.id.accelerationText);
+        orientationReadoutRoll = (TextView)findViewById(R.id.accelerationTextRoll);
+        orientationReadoutPitch = (TextView)findViewById(R.id.accelerationTextPitch);
 
         manager = (SensorManager)getSystemService(SENSOR_SERVICE);
         accelerometer = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -48,27 +51,27 @@ public class OrientationActivity extends Activity implements SensorEventListener
     }
 
     private float[] orientation = new float[3];
+
     public float[] getOrientation() { return orientation; }
 
     private float[] startOrientation = null;
+
     public float[] getStartOrientation() {
         return startOrientation;
     }
 
-    //Zero Clinometer
     public void zeroButtonClicked(View view) {
         startOrientation = null;
     }
 
-
-    //Set roll and pitch limit
-    //public void limitButtonClicked
+    public void limitOrientationClicked(View view) {
+        Intent intent = new Intent(OrientationActivity.this, LimitOrientation.class);
+        startActivity(intent);
+    }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
-
-    //Calculation of roll and pitch
     @Override
     public void onSensorChanged(SensorEvent event) {
         if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
@@ -92,8 +95,10 @@ public class OrientationActivity extends Activity implements SensorEventListener
                 roll = (roll * 180)/Math.PI;
                 pitch = (pitch * 180)/Math.PI;
 
-                orientationReadout.setText("Pitch: " + (int) pitch + "\nRoll: " + (int) roll);
+                orientationReadoutRoll.setText("Roll: " +  (int) roll);
+                orientationReadoutPitch.setText("Pitch: " + (int) pitch);
             }
         }
     }
+
 }
