@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * Created by William on 3/19/2017.
+ * Created by William James on 3/19/2017.
+ * onCreate comes from android.os.Bundle and is called when the activity is created.
  */
 
 public class InformationPageActivity extends AppCompatActivity  {

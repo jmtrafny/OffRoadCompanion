@@ -12,6 +12,22 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+
+/**
+ * Created by James Trafny on 2/28/2017.
+ *
+ * onCreate comes from android.os.Bundle and is called when the activity is created.
+ * The OrientationActivity class handles both calculating and displaying the current roll
+ *      and pitch of the device.
+ * onCreate, onResume, onPause comes from android.os.Bundle and is called when the
+ *      activity is created, paused, or resumed.
+ * getOrientation returns orientation.
+ * getStartOrientation returns the start orientation.
+ * zeroButtonClicked gets called when r.id.zeroButton sends a click event.
+ * limitOrientationClicked gets called when r.id.limitOrientation sends a click event.
+ * onAccuracyChanged gets called when SensorEventListener detects a change in accuracy.
+ * onSensorChanged gets called when SensorEventLister sends a sensor event.
+ */
 public class OrientationActivity extends Activity implements SensorEventListener {
 
     TextView orientationReadoutRoll;
