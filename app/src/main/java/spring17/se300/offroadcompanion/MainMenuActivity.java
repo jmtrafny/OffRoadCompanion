@@ -13,33 +13,39 @@ import android.view.View;
  * orientationButtonClicked gets called when r.id.orientationButton sends a click event.
  * informationButtonClicked gets called when r.id.informationButton sends a click event.
  */
-public class MainMenuActivity extends AppCompatActivity {
+public class MainMenuActivity extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
     }
 
     // Called when the user clicks the mainMenuButtonNavigation button
-    public void navigationButtonClicked(View view) {
+    public void navigationButtonClicked(View view)
+    {
         // Do something in response to button
         Intent intent = new Intent(MainMenuActivity.this, NavigationActivity.class);
         startActivity(intent);
     }
 
     // Called when the user clicks the mainMenuButtonOrientation button
-    public void orientationButtonClicked(View view) {
+    public void orientationButtonClicked(View view)
+    {
         // Do something in response to button
         Intent intent = new Intent(MainMenuActivity.this, OrientationActivity.class);
         startActivity(intent);
     }
 
     // Called when the user clicks the mainMenuButtonInformation button
-    public void informationButtonClicked(View view) {
+    public void informationButtonClicked(View view)
+    {
         // Do something in response to button
         Intent intent = new Intent(MainMenuActivity.this, InformationMenuActivity.class);
         startActivity(intent);
     }
+
 
 }
