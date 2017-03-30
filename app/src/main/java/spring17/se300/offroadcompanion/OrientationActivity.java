@@ -64,8 +64,8 @@ public class OrientationActivity extends Activity implements SensorEventListener
 
     protected void onResume() {
         super.onResume();
-        manager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_FASTEST);
-        manager.registerListener(this, magnometer, SensorManager.SENSOR_DELAY_FASTEST);
+        manager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+        manager.registerListener(this, magnometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     protected void onPause() {
@@ -121,8 +121,8 @@ public class OrientationActivity extends Activity implements SensorEventListener
                 orientationReadoutRoll.setText("Roll: " +  (int) roll);
                 orientationReadoutPitch.setText("Pitch: " + (int) pitch);
 
-                rollImg.setRotation((float)roll);
-                pitchImg.setRotation((float)pitch);
+                rollImg.setRotation((float)roll*(-1));
+                pitchImg.setRotation((float)pitch*(-1));
 
             }
         }

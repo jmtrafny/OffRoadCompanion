@@ -12,6 +12,6 @@ import android.content.Context;
 public class Constants {
 
     public static long INIT_TIME;
-    public static Context CURRENT_CONTEXT;
+    //public static Context CURRENT_CONTEXT;
 
 }
