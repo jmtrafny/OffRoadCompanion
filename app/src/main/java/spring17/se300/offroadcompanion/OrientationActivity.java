@@ -77,11 +77,6 @@ public class OrientationActivity extends Activity implements SensorEventListener
         manager.registerListener(this, magnometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
-
-
-
-
-
     protected void onPause() {
         super.onPause();
         manager.unregisterListener(this);
