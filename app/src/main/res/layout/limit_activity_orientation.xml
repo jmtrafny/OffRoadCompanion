@@ -10,48 +10,148 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:weightSum="20"
         >
 
-    <TextView
-        android:id="@+id/TextViewLimitPitch"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#FFFFFF"
-        android:layout_weight="2"/>
 
 
-    <TextView
-        android:id="@+id/TextViewLimitRoll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#FFFFFF"
-        android:layout_weight="2"/>
+        <TextView
+            android:text="Roll Limit:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/editLimitRoll"
+            android:hint="Input roll value between -90 and 90 degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="6"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+
+            />
+
+        <TextView
+            android:text="Pitch Limit:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/editLimitPitch"
+            android:hint="Input pitch value between -90 and 90 degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="6"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:text="Roll Warning:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/editwarningRoll"
+            android:hint="Input roll value between -90 and 90 degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="6"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+
+            />
+
+        <TextView
+            android:text="Pitch Warning:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+
+
+        <EditText
+            android:id="@+id/editwarningtPitch"
+            android:hint="Input pitch value between -90 and 90 degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="6"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+            />
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_weight="2"
+        android:orientation="horizontal"
         android:weightSum="2">
 
         <Button
-            android:text="Set"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="reset"
+            android:id="@+id/setLimit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="orientationLimitSetClicked"
+            android:text="Set" />
+
+        <Button
             android:id="@+id/orientationButtonLimit"
-            android:onClick="orientationLimitResetClicked"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="orientationLimitResetClicked"
+            android:text="reset" />
 
     </LinearLayout>
-
 
 
 </LinearLayout>

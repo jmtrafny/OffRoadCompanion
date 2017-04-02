@@ -20,7 +20,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#FFFFFF"
-            android:textSize="50sp" />
+            android:textSize="50sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/orientationReadoutPitch"
@@ -28,7 +29,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#FFFFFF"
-            android:textSize="50sp" />
+            android:textSize="50sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -66,6 +68,7 @@
 
         <Button
             android:text="Zero"
+            android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -75,6 +78,7 @@
 
         <Button
             android:text="Limit"
+            android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

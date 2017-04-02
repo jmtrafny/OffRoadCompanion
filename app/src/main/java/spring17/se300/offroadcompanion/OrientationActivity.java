@@ -6,12 +6,17 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import static java.lang.Math.*;
 
 
 /**
@@ -31,6 +36,10 @@ import android.widget.TextView;
  */
 public class OrientationActivity extends Activity implements SensorEventListener {
 
+    double limitedRoll = 720;
+    double limitedPitch = 720;
+    double warningRoll = 360;
+    double warningPitch= 360;
     TextView orientationReadoutRoll;
     TextView orientationReadoutPitch;
     ImageView rollImg;
@@ -67,6 +76,11 @@ public class OrientationActivity extends Activity implements SensorEventListener
         manager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         manager.registerListener(this, magnometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
+
+
+
+
+
 
     protected void onPause() {
         super.onPause();
@@ -117,6 +131,13 @@ public class OrientationActivity extends Activity implements SensorEventListener
                 // Radians to degrees
                 roll = (roll * 180)/Math.PI;
                 pitch = (pitch * 180)/Math.PI;
+
+                while ( abs(roll)+ abs(warningRoll) >= abs (limitedRoll) || abs(pitch) + abs(warningPitch)  >= abs(limitedPitch)){
+                    Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+                    MediaPlayer mp = MediaPlayer.create(getApplicationContext(), notification);
+                    mp.start();
+                    mp.setLooping(true);
+                }
 
                 orientationReadoutRoll.setText("Roll: " +  (int) roll);
                 orientationReadoutPitch.setText("Pitch: " + (int) pitch);
