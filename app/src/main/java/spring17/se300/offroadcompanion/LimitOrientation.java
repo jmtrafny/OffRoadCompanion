@@ -29,7 +29,6 @@ public class LimitOrientation  extends OrientationActivity {
         setContentView(R.layout.limit_activity_orientation);
     }
 
-
     public void orientationLimitSetClicked (View View){
         limitedRollText =(EditText) findViewById(R.id.editLimitRoll);
         limitedPitchText =(EditText) findViewById(R.id.editLimitPitch);
@@ -68,7 +67,6 @@ public class LimitOrientation  extends OrientationActivity {
 
     }
 
-
     public void orientationLimitResetClicked (View View){
         limitedRollText.getText().clear();
         limitedPitchText.getText().clear();
@@ -81,10 +79,6 @@ public class LimitOrientation  extends OrientationActivity {
         Intent intent = new Intent(LimitOrientation.this, OrientationActivity.class);
         startActivity(intent);
 
-
     }
-
-
-
 
 }

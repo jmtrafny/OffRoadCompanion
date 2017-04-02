@@ -14,8 +14,6 @@
         android:weightSum="20"
         >
 
-
-
         <TextView
             android:text="Roll Limit:"
             android:layout_width="match_parent"
@@ -24,8 +22,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
-
             />
 
         <EditText
@@ -39,9 +35,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
-
-
             />
 
         <TextView
@@ -52,7 +45,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
             />
 
         <EditText
@@ -66,8 +58,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
-
             />
 
         <TextView
@@ -78,8 +68,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
-
             />
 
         <EditText
@@ -93,9 +81,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
-
-
             />
 
         <TextView
@@ -106,9 +91,7 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
             />
-
 
         <EditText
             android:id="@+id/editwarningtPitch"
@@ -121,7 +104,6 @@
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textStyle="bold"
-
 
             />
 
@@ -152,6 +134,5 @@
             android:text="reset" />
 
     </LinearLayout>
-
 
 </LinearLayout>
