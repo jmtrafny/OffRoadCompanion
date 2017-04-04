@@ -17,8 +17,27 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
 
+/**
+ * Created by Ed Lewis on 3/20/2017.
+ *
+ * onConnected Makes sure that the device has been given permission to find the users location.
+ * LongPressLocationSource Drops a pin on a location when a user long presses the screen.
+ * onCreate Sets the layout for the map activity and connects to google API services to build the map.
+ * onResume communicates with the superclass onResume to resume where the maps were.
+ * onPause communicates with the superclass onResume to resume where the maps were.
+ * onMapReady when the map activity is started, it sets the camera to center on the users location, as well as change the type of map.
+ * onStart connects with GoogleAPIClient when the activity is opened.
+ * onStop disconnects with GoogleAPIClient when the activity is opened.
+ *
+ */
+
 public class NavigationActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks
 {
+    GoogleApiClient mGoogleApiClient;
+    Location mLastLocation;
+    GoogleMap mMap;
+    private LongPressLocationSource mLocationSource;
+
     @Override
     public void onConnected(@Nullable Bundle bundle)
     {
@@ -42,13 +61,6 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
     {
 
         private OnLocationChangedListener mListener;
-
-        /**
-         * Flag to keep track of the activity's lifecycle. This is not strictly necessary in this
-         * case because onMapLongPress events don't occur while the activity containing the map is
-         * paused but is included to demonstrate best practices (e.g., if a background service were
-         * to be used).
-         */
         private boolean mPaused;
 
         @Override
@@ -62,7 +74,8 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
         }
 
         @Override
-        public void onMapLongClick(LatLng point) {
+        public void onMapLongClick(LatLng point)
+        {
             if (mListener != null && !mPaused) {
                 Location location = new Location("LongPressLocationProvider");
                 location.setLatitude(point.latitude);
@@ -83,11 +96,8 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
         }
     }
 
-    private LongPressLocationSource mLocationSource;
 
-    GoogleApiClient mGoogleApiClient;
-    Location mLastLocation;
-    GoogleMap mMap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
