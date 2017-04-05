@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.LatLng;
  * onStart connects with GoogleAPIClient when the activity is opened.
  * onStop disconnects with GoogleAPIClient when the activity is opened.
  *
+ *
  */
 
 public class NavigationActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks
@@ -64,7 +65,8 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
         private boolean mPaused;
 
         @Override
-        public void activate(OnLocationChangedListener listener) {
+        public void activate(OnLocationChangedListener listener)
+        {
             mListener = listener;
         }
 
@@ -76,7 +78,8 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
         @Override
         public void onMapLongClick(LatLng point)
         {
-            if (mListener != null && !mPaused) {
+            if (mListener != null && !mPaused)
+            {
                 Location location = new Location("LongPressLocationProvider");
                 location.setLatitude(point.latitude);
                 location.setLongitude(point.longitude);
