@@ -40,10 +40,25 @@ public class LimitOrientation  extends OrientationActivity {
         warningPitch = Double.parseDouble(warningPitchText.getText().toString());
 
 
-       if ( limitedRoll < -90 || limitedRoll > 90){
-            limitedRollText.setError(outbound);
-       }
-       if  ( limitedPitch < -90 || limitedPitch > 90){
+        if(limitedPitchText.getText().toString().trim().length() == 0){
+            limitedPitch = 720;
+        }
+        if (limitedRollText.getText().toString().trim().length() == 0){
+            limitedRoll = 720;
+        }
+
+        if(warningPitchText.getText().toString().trim().length() == 0){
+            warningRoll = 360;
+        }
+        if(warningRollText.getText().toString().trim().length() == 0){
+            warningRoll = 360;
+        }
+        
+
+        if ( limitedRoll < -90 || limitedRoll > 90) {
+             limitedRollText.setError(outbound);
+        }
+        if  ( limitedPitch < -90 || limitedPitch > 90){
             limitedPitchText.setError(outbound);
        }
         if ( warningRoll < -90 || warningRoll > 90){
@@ -60,7 +75,7 @@ public class LimitOrientation  extends OrientationActivity {
             limitedRollText.setError(warnValue);
             warningRollText.setError(limValue);
         }
-            else{
+        else{
             Intent intent = new Intent(LimitOrientation.this, OrientationActivity.class);
             startActivity(intent);
         }
@@ -79,6 +94,11 @@ public class LimitOrientation  extends OrientationActivity {
         Intent intent = new Intent(LimitOrientation.this, OrientationActivity.class);
         startActivity(intent);
 
+    }
+
+    private boolean isEmpty(EditText etText)
+    {
+        return etText.getText().toString().trim().length() == 0;
     }
 
 }
