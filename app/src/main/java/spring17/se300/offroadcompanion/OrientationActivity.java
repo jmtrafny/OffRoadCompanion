@@ -40,6 +40,11 @@ public class OrientationActivity extends Activity implements SensorEventListener
     double limitedPitch = 720;
     double warningRoll = 360;
     double warningPitch= 360;
+    double roll;
+    double pitch;
+
+    private long startTime;
+
     TextView orientationReadoutRoll;
     TextView orientationReadoutPitch;
     ImageView rollImg;
@@ -53,6 +58,8 @@ public class OrientationActivity extends Activity implements SensorEventListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        startTime = System.currentTimeMillis();
+
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -72,6 +79,7 @@ public class OrientationActivity extends Activity implements SensorEventListener
     }
 
     protected void onResume() {
+        startTime = System.currentTimeMillis();
         super.onResume();
         manager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         manager.registerListener(this, magnometer, SensorManager.SENSOR_DELAY_NORMAL);
@@ -120,8 +128,9 @@ public class OrientationActivity extends Activity implements SensorEventListener
                     startOrientation = new float[orientation.length];
                     System.arraycopy(orientation, 0, startOrientation, 0, orientation.length);
                 }
-                double roll = getOrientation()[1] - getStartOrientation()[1];
-                double pitch = getOrientation()[2] - getStartOrientation()[2];
+
+                roll = getOrientation()[1] - getStartOrientation()[1];
+                pitch = getOrientation()[2] - getStartOrientation()[2];
 
                 // Radians to degrees
                 roll = (roll * 180)/Math.PI;
@@ -134,8 +143,11 @@ public class OrientationActivity extends Activity implements SensorEventListener
                     mp.setLooping(true);
                 }
 
-                orientationReadoutRoll.setText("Roll: " +  (int) roll);
-                orientationReadoutPitch.setText("Pitch: " + (int) pitch);
+                long now = System.currentTimeMillis();
+                if(now >= startTime + 5000) {
+                    orientationReadoutRoll.setText("Roll: " + (int) roll);
+                    orientationReadoutPitch.setText("Pitch: " + (int) pitch);
+                }
 
                 rollImg.setRotation((float)roll*(-1));
                 pitchImg.setRotation((float)pitch*(-1));

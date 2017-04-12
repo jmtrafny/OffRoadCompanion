@@ -24,7 +24,7 @@ public class MainMenuActivity extends AppCompatActivity {
     // Called when the user clicks the mainMenuButtonNavigation button
     public void navigationButtonClicked(View view) {
         // Do something in response to button
-        Intent intent = new Intent(MainMenuActivity.this, NavigationMenuActivity.class);
+        Intent intent = new Intent(MainMenuActivity.this, NavigationActivity.class);
         startActivity(intent);
     }
 
