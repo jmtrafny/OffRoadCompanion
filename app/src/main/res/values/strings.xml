@@ -7,4 +7,6 @@
     <string name="splashScreenText">Off Road Companion</string>
     <string name="orientationTextViewRoll">No Data</string>
     <string name="orientationTextViewPitch">No Data</string>
+    <string name="title_activity_navigation">Map</string>
+    <string name="title_activity_nav">nav</string>
 </resources>
