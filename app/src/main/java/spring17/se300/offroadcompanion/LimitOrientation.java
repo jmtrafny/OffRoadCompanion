@@ -2,8 +2,10 @@ package spring17.se300.offroadcompanion;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 /**
@@ -23,6 +25,7 @@ public class LimitOrientation  extends OrientationActivity {
     String warnValue = "Value cannot be the same as warning";
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,63 +33,71 @@ public class LimitOrientation  extends OrientationActivity {
     }
 
     public void orientationLimitSetClicked (View View){
-        limitedRollText =(EditText) findViewById(R.id.editLimitRoll);
-        limitedPitchText =(EditText) findViewById(R.id.editLimitPitch);
-        limitedRoll = Double.parseDouble(limitedRollText.getText().toString());
-        limitedPitch = Double.parseDouble(limitedPitchText.getText().toString());
-        warningRollText =(EditText) findViewById(R.id.editwarningRoll);
-        warningPitchText =(EditText) findViewById(R.id.editwarningtPitch);
-        warningRoll = Double.parseDouble(warningRollText.getText().toString());
-        warningPitch = Double.parseDouble(warningPitchText.getText().toString());
+        limitedRollText = (EditText) findViewById(R.id.editLimitRoll);
+        limitedPitchText = (EditText) findViewById(R.id.editLimitPitch);
+        warningRollText = (EditText) findViewById(R.id.editwarningRoll);
+        warningPitchText = (EditText) findViewById(R.id.editwarningtPitch);
 
 
-        if(limitedPitchText.getText().toString().trim().length() == 0){
-            limitedPitch = 720;
+        if (TextUtils.isEmpty(limitedRollText.getText().toString())) {
+            Toast.makeText(this, "Please fill in the blank", Toast.LENGTH_SHORT).show();
+            return;
         }
-        if (limitedRollText.getText().toString().trim().length() == 0){
-            limitedRoll = 720;
+        else {
+            limitedRoll = Double.parseDouble(limitedRollText.getText().toString());
+            if (limitedRoll < -90 || limitedRoll > 90) {
+                limitedRollText.setError(outbound);
+            }
         }
 
-        if(warningPitchText.getText().toString().trim().length() == 0){
-            warningRoll = 360;
-        }
-        if(warningRollText.getText().toString().trim().length() == 0){
-            warningRoll = 360;
-        }
-        
 
-        if ( limitedRoll < -90 || limitedRoll > 90) {
-             limitedRollText.setError(outbound);
+        if (limitedPitchText.getText().length() == 0) {
+            Toast.makeText(this, "Please fill in the blank", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            limitedPitch = Double.parseDouble(limitedPitchText.getText().toString());
+            if (limitedPitch < -90 || limitedPitch > 90) {
+                limitedPitchText.setError(outbound);
+            }
         }
-        if  ( limitedPitch < -90 || limitedPitch > 90){
-            limitedPitchText.setError(outbound);
-       }
-        if ( warningRoll < -90 || warningRoll > 90){
-            warningRollText.setError(outbound);
+
+        if (warningRollText.getText().length() == 0) {
+            Toast.makeText(this, "Please fill in the blank", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            warningRoll = Double.parseDouble(warningRollText.getText().toString());
+            if (warningRoll < -90 || warningRoll > 90) {
+                warningRollText.setError(outbound);
+            }
         }
-        if  ( warningRoll < -90 || warningRoll > 90) {
-            warningPitchText.setError(outbound);
+
+
+        if (warningPitchText.getText().length() == 0) {
+            Toast.makeText(this, "Please fill in the blank", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            warningPitch = Double.parseDouble(warningPitchText.getText().toString());
+            if (warningPitch < -90 || warningPitch > 90) {
+                warningPitchText.setError(outbound);
+            }
         }
-        if (warningPitch == limitedPitch){
+
+        if (warningPitch == limitedPitch) {
             limitedPitchText.setError(warnValue);
             warningPitchText.setError(limValue);
         }
-        if (warningRoll == limitedRoll){
+        if (warningRoll == limitedRoll) {
             limitedRollText.setError(warnValue);
             warningRollText.setError(limValue);
-        }
-        else{
+
             Intent intent = new Intent(LimitOrientation.this, OrientationActivity.class);
             startActivity(intent);
-        }
 
+        }
     }
 
+
     public void orientationLimitResetClicked (View View){
-        limitedRollText.getText().clear();
-        limitedPitchText.getText().clear();
-        warningRollText.getText().clear();
-        warningPitchText.getText().clear();
         limitedRoll = 720;
         limitedPitch = 720;
         warningRoll = 360;
@@ -96,9 +107,6 @@ public class LimitOrientation  extends OrientationActivity {
 
     }
 
-    private boolean isEmpty(EditText etText)
-    {
-        return etText.getText().toString().trim().length() == 0;
-    }
+
 
 }
