@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OffRoadCompanion.iml" filepath="$PROJECT_DIR$/OffRoadCompanion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OffRoadCompanion1.iml" filepath="$PROJECT_DIR$/OffRoadCompanion1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
