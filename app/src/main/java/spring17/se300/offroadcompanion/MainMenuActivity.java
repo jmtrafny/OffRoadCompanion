@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.graphics.Typeface;
 
 /**
  * Created by James Trafny on 2/28/2017.
@@ -21,6 +23,18 @@ public class MainMenuActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        // Font path
+        String fontPath = "fonts/Capture_it.ttf";
+
+        // text view label
+        TextView mmText = (TextView) findViewById(R.id.mainMenuText);
+
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
+
+        // Applying font
+        mmText.setTypeface(tf);
     }
 
     // Called when the user clicks the mainMenuButtonNavigation button
