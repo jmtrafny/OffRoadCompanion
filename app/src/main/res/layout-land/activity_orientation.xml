@@ -41,21 +41,40 @@
         android:layout_weight="3"
         android:weightSum="2">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle1"
-            android:id="@+id/imageViewCircle1"
-            />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
 
-        <ImageView
-            android:id="@+id/imageViewCircle2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/circle1"
-            />
+            <ImageView
+                android:id="@+id/dial"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/dial" />
+
+            <ImageView
+                android:id="@+id/imageViewCircle1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/circle1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/dial2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/dial" />
+
+            <ImageView
+                android:id="@+id/imageViewCircle2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/pitch_indicator" />
+
+        </FrameLayout>
 
     </LinearLayout>
 
