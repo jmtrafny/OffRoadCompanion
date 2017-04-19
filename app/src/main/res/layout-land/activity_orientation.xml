@@ -19,18 +19,20 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/orientationReadoutPitch"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -82,21 +84,20 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="2">
 
         <Button
-            android:text="Zero"
-            android:textStyle="bold"
+            android:id="@+id/ZeroButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="zeroButtonClicked"
             android:padding="20dp"
-            android:id="@+id/ZeroButton"
-            android:onClick="zeroButtonClicked"/>
+            android:text="Zero"
+            android:textStyle="bold" />
 
         <Button
             android:text="Limit"
