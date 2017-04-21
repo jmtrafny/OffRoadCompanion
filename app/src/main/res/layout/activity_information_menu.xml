@@ -56,7 +56,7 @@
                         android:id="@+id/trailBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:onClick="trailButtonClicked"
+                        android:onClick="etButtonClicked"
                         android:text="View" />
 
                 </FrameLayout>
@@ -104,7 +104,8 @@
                         android:id="@+id/bDrivingBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="bdButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -150,7 +151,8 @@
                         android:id="@+id/aDrivingBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="adButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -196,7 +198,8 @@
                         android:id="@+id/muddinBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="mButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -242,7 +245,8 @@
                         android:id="@+id/rockBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="rcButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -288,7 +292,8 @@
                         android:id="@+id/snowBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="siButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -334,7 +339,8 @@
                         android:id="@+id/winchBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="wButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -380,7 +386,8 @@
                         android:id="@+id/uStuckBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="usButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -426,7 +433,8 @@
                         android:id="@+id/fStuckBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="fsButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -473,7 +481,8 @@
                         android:id="@+id/respBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="rorButtonClicked"/>
 
                 </FrameLayout>
 
@@ -520,7 +529,8 @@
                         android:id="@+id/listBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="wtpButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -566,7 +576,8 @@
                         android:id="@+id/partsBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="tButtonClicked" />
                 </FrameLayout>
 
             </TableRow>
@@ -612,7 +623,8 @@
                         android:id="@+id/basicBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="bmrButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>
@@ -658,7 +670,8 @@
                         android:id="@+id/tricksBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View" />
+                        android:text="View"
+                        android:onClick="tntcButtonClicked"/>
                 </FrameLayout>
 
             </TableRow>

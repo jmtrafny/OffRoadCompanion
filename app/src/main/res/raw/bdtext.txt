@@ -1,0 +1,30 @@
+
+Basic off road driving begins with basic knowledge of your vehicle. Jeeps (and other 4x4s) drive very differently than your typical front wheel drive sedan. This is due to the complex, heavy duty drivelines and suspensions fitted to common off road vehicles. While all 4x4s share this trait, the kind of equipment fitted varies greatly. These variations in equipment lead to very different driving styles. It is important to understand how your vehicle is equipped and what effect this will have on its driving style. Below is a list of different components your vehicle may be fitted with and how they will affect your vehicles driving dynamic.
+
+
+Transfer Case
+All 4x4s are fitted with a transfer case. The transfer case is what splits the power coming out of the transmission and sends it to the front and rear wheels. What varies between vehicles are the features the transfer case is equipped with. The most basic transfer cases equipped on modern vehicles will allow the user to switch between 4wd and 2wd. More common, however, are transfer cases that feature a gear reduction. This creates a low range gear that can be accessed by switching the transfer case into 4wdLO. When in 4wdLO, your vehicle will gain a large increase in wheel torque at the expense of wheel speed. In the real world, this means that in 4wdLO you will move very slowly but will be very hard to stop. The gear reduction featured varies across al 4x4s though the most common reductions are 2.73:1 and 4.10:1. 
+
+Solid Axels
+Many 4x4s and most pickup trucks have at least 1 solid axle. All Jeeps have two. The benefits of solid axels are mainly seen off-road. Solid axels offer more suspension articulation than an independent system while at the same time lowering your vehicles center of gravity. These benefits allow your vehicle to keep your tires on the ground at angles more extreme than what’s possible with an independent system. However, when on the street solid axels can be a handful when cornering. Because the wheels are tied together if one hits a bump it will upset the wheel directly opposite it. This can cause issues especially when cornering. Steering solid axels will also wear through tires faster as they do not offer a great deal of motion to the pivoting tire. You can tell if your vehicle is equipped with solid axels by looking under your vehicle. If there is an unbroken tube running from the center of one wheel to the other with a differential either in the middle or offset to one side and your suspension is resting on that tube, you have a solid axel.
+
+Independent Suspension
+Rarer in the off-road world, except for specialized cases such as desert racers, is an independent suspension system. An independent suspension system is characterized by each wheel being able to move freely compared to the rest. This allows for high stability over bumps at speed and a smooth ride due to a decrease in unsprang mass.  However, independent systems come at the cost of severely reduced articulation and wheel travel. Because of this fully independent systems are not suited for anything but light off-roading. A fully independent system will not be able to keep wheels on the ground in complex terrain and in some situations may contribute to a roll-over. If your 4x4 is equipped with fully independent suspension at both ends it is recommended that you stick to dirt roads and light trails. You can tell if your vehicle is equipped with independent suspension by looking under the vehicle. If a pair of wheels each have a set of arms stemming from the center of the wheel and attaching to the body or frame with a shaft running to a central differential then your vehicle is equipped with independent suspension.
+
+Driving Tips
+
+Now that you can identify the part of your 4x4 that will most effect your driving its time for a few basic tips.
+
+•	Take it slow! Its not a race, the slower you go the more control you have. When your wheels are spinning they do you no good so stay of the gas unless you really need it. 
+
+•	You don’t always need to be in 4wd. When you are in 4wd, your ability to turn is reduced. If you need to make a tight turn, you should consider taking it out of 4wd before your attempt a multi-point turn. 
+
+•	If you have a handbrake, use it! When you find that you need to stop on a hill, rather than rolling back down and attempting the hill again use your handbrake to hold your vehicle in place and to assist with the hill start.
+
+•	Shifting in to low range may slow you down but it also multiplies the torque output by your engine. You can use this to your advantage to help climb steep grades or drive through soft terrain.
+
+•	Shifting into 4wd helps your vehicle put power down. It does not, however, help you stop. In a situation where the added traction of 4wd is necessary, be sure to increase your following distances to allow for safe stopping.
+
+•	When in 4wd, your turning radius will be increased, keep this in mind when you need to make a tight corner.
+
+•	Making tight turns in 4wd while on dry pavement can damage your axels. Only use 4wd in low traction environments. 
