@@ -15,9 +15,9 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                app:srcCompat="@color/colorPrimary"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" />
+                android:layout_height="300dp"
+                app:srcCompat="@mipmap/snow" />
 
             <TextView
                 android:id="@+id/snowTitle"

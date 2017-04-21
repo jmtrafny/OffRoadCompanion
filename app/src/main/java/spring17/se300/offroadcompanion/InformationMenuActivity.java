@@ -79,44 +79,30 @@ public class InformationMenuActivity extends AppCompatActivity {
         intent.putExtra("page", pageId);
         startActivity(intent);
     }
-    public void fsButtonClicked(View view) {
+    public void wtpButtonClicked(View view) {
         // Do something in response to button
         int pageId = 8;
         Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
         intent.putExtra("page", pageId);
         startActivity(intent);
     }
-    public void rorButtonClicked(View view) {
+    public void tButtonClicked(View view) {
         // Do something in response to button
         int pageId = 9;
         Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
         intent.putExtra("page", pageId);
         startActivity(intent);
     }
-    public void wtpButtonClicked(View view) {
+    public void bmrButtonClicked(View view) {
         // Do something in response to button
         int pageId = 10;
         Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
         intent.putExtra("page", pageId);
         startActivity(intent);
     }
-    public void tButtonClicked(View view) {
-        // Do something in response to button
-        int pageId = 11;
-        Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
-        intent.putExtra("page", pageId);
-        startActivity(intent);
-    }
-    public void bmrButtonClicked(View view) {
-        // Do something in response to button
-        int pageId = 12;
-        Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
-        intent.putExtra("page", pageId);
-        startActivity(intent);
-    }
     public void tntcButtonClicked(View view) {
         // Do something in response to button
-        int pageId = 13;
+        int pageId = 11;
         Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
         intent.putExtra("page", pageId);
         startActivity(intent);
