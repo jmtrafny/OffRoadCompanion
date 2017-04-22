@@ -29,7 +29,7 @@
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         android:background="@android:color/transparent"
-                        app:srcCompat="@mipmap/trailet" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -78,7 +78,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/basic" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -125,7 +125,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/advance" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -172,7 +172,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/mud" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -219,7 +219,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/rock" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -266,7 +266,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/snowi" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -313,7 +313,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/winch" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -360,7 +360,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/stuck" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -407,7 +407,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/packi" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -454,7 +454,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/tools" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -501,7 +501,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/fixi" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -548,7 +548,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@mipmap/tipsi" />
+                        app:srcCompat="@color/colorAccent" />
                 </FrameLayout>
 
                 <FrameLayout

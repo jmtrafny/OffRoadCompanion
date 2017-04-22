@@ -64,6 +64,7 @@ public class InformationMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(InformationMenuActivity.this, InformationPageActivity.class);
         intent.putExtra("page", pageId);
         startActivity(intent);
+
     }
     public void wButtonClicked(View view) {
         // Do something in response to button
