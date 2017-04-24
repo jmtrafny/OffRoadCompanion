@@ -17,15 +17,17 @@
             <TableRow
                 android:id="@+id/trail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/trailIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         android:background="@android:color/transparent"
@@ -34,11 +36,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/trailEt"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:clickable="false"
                         android:gravity="center"
@@ -51,11 +54,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/trailBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="etButtonClicked"
                         android:text="View" />
@@ -67,15 +71,17 @@
             <TableRow
                 android:id="@+id/bDrivingRow"
                 android:layout_width="match_parent"
-                android:layout_height="75dp">
+                android:layout_height="75dp"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/bDrivingIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/basicicon" />
@@ -83,11 +89,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/bDriving"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Basic Driving"
@@ -99,11 +106,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/bDrivingBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="bdButtonClicked"
                         android:text="View" />
@@ -114,15 +122,17 @@
             <TableRow
                 android:id="@+id/aDrivingRow"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/aDrivingIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/adicon" />
@@ -130,11 +140,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/aDriving"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Advanced Driving"
@@ -146,11 +157,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/aDrivingBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="adButtonClicked"
                         android:text="View" />
@@ -161,15 +173,17 @@
             <TableRow
                 android:id="@+id/muddin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/mudIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/mudicon" />
@@ -177,11 +191,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/mud"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Muddin'"
@@ -193,11 +208,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/muddinBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="mButtonClicked"
                         android:text="View" />
@@ -208,15 +224,17 @@
             <TableRow
                 android:id="@+id/crawling"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/rockIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/rockicon" />
@@ -224,11 +242,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/rock"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Rock Crawling"
@@ -240,11 +259,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/rockBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="rcButtonClicked"
                         android:text="View" />
@@ -255,15 +275,17 @@
             <TableRow
                 android:id="@+id/winter"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/snowIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/snowicon" />
@@ -271,11 +293,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/Snow"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Snow and Ice Driving"
@@ -287,11 +310,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/snowBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="siButtonClicked"
                         android:text="View" />
@@ -302,15 +326,17 @@
             <TableRow
                 android:id="@+id/winching"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/winchIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/winchicon" />
@@ -318,11 +344,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/winch"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Winching"
@@ -334,11 +361,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/winchBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="wButtonClicked"
                         android:text="View" />
@@ -349,15 +377,17 @@
             <TableRow
                 android:id="@+id/uStuck"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/uStuckIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/stuckicon" />
@@ -365,11 +395,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/u"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Are You Stuck?"
@@ -381,11 +412,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/uStuckBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="usButtonClicked"
                         android:text="View" />
@@ -396,15 +428,17 @@
             <TableRow
                 android:id="@+id/list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/listIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/packicon" />
@@ -412,11 +446,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/packingList"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="What to Pack for a Day on the Trails"
@@ -428,11 +463,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/listBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="wtpButtonClicked"
                         android:text="View" />
@@ -443,15 +479,17 @@
             <TableRow
                 android:id="@+id/parts"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/partsIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/toolsicon" />
@@ -459,11 +497,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/toolsParts"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Recommended Tools and Parts to Bring"
@@ -475,11 +514,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/partsBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="tButtonClicked"
                         android:text="View" />
@@ -490,15 +530,17 @@
             <TableRow
                 android:id="@+id/basic"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/basicIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/fixicon" />
@@ -506,11 +548,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/BasicM"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Basic Maintenince and Repairs"
@@ -522,11 +565,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/basicBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="bmrButtonClicked"
                         android:text="View" />
@@ -537,15 +581,17 @@
             <TableRow
                 android:id="@+id/tricks"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/tricksIMG"
-                        android:layout_width="125dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         app:srcCompat="@mipmap/tipsicon" />
@@ -553,11 +599,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/tts"
-                        android:layout_width="175dp"
+                        android:layout_width="match_parent"
                         android:layout_height="75dp"
                         android:gravity="center"
                         android:text="Tips and Tricks"
@@ -569,11 +616,12 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/tricksBut"
-                        android:layout_width="110dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:onClick="tntcButtonClicked"
                         android:text="View" />
