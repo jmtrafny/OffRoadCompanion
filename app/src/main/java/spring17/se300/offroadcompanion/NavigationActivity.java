@@ -20,6 +20,8 @@ import com.google.android.gms.maps.model.LatLng;
 /**
  * Created by Ed Lewis on 3/20/2017.
  *
+ * Shawn McDonnell provided assistance on getting the user location to work.
+ *
  * onConnected Makes sure that the device has been given permission to find the users location.
  * LongPressLocationSource Drops a pin on a location when a user long presses the screen.
  * onCreate Sets the layout for the map activity and connects to google API services to build the map.
