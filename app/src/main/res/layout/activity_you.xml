@@ -30,11 +30,10 @@
 
             <TextView
                 android:id="@+id/youText"
-                android:layout_width="400dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="TextView"
-                android:textAlignment="textStart"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 

@@ -29,7 +29,7 @@
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
                         android:background="@android:color/transparent"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/traileticon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -78,7 +78,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/basicicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -105,8 +105,8 @@
                         android:id="@+id/bDrivingBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="bdButtonClicked"/>
+                        android:onClick="bdButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -125,7 +125,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/adicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -152,8 +152,8 @@
                         android:id="@+id/aDrivingBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="adButtonClicked"/>
+                        android:onClick="adButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -172,7 +172,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/mudicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -199,8 +199,8 @@
                         android:id="@+id/muddinBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="mButtonClicked"/>
+                        android:onClick="mButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -219,7 +219,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/rockicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -246,8 +246,8 @@
                         android:id="@+id/rockBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="rcButtonClicked"/>
+                        android:onClick="rcButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -266,7 +266,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/snowicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -293,8 +293,8 @@
                         android:id="@+id/snowBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="siButtonClicked"/>
+                        android:onClick="siButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -313,7 +313,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/winchicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -340,8 +340,8 @@
                         android:id="@+id/winchBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="wButtonClicked"/>
+                        android:onClick="wButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -360,7 +360,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/stuckicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -387,8 +387,8 @@
                         android:id="@+id/uStuckBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="usButtonClicked"/>
+                        android:onClick="usButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -407,7 +407,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/packicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -434,8 +434,8 @@
                         android:id="@+id/listBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="wtpButtonClicked"/>
+                        android:onClick="wtpButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -454,7 +454,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/toolsicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -481,8 +481,8 @@
                         android:id="@+id/partsBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="tButtonClicked" />
+                        android:onClick="tButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -501,7 +501,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/fixicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -528,8 +528,8 @@
                         android:id="@+id/basicBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="bmrButtonClicked"/>
+                        android:onClick="bmrButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
@@ -548,7 +548,7 @@
                         android:layout_width="125dp"
                         android:layout_height="75dp"
                         android:adjustViewBounds="false"
-                        app:srcCompat="@color/colorAccent" />
+                        app:srcCompat="@mipmap/tipsicon" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -575,8 +575,8 @@
                         android:id="@+id/tricksBut"
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
-                        android:text="View"
-                        android:onClick="tntcButtonClicked"/>
+                        android:onClick="tntcButtonClicked"
+                        android:text="View" />
                 </FrameLayout>
 
             </TableRow>
