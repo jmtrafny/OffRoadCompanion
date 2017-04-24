@@ -146,11 +146,11 @@ public class OrientationActivity extends Activity implements SensorEventListener
                 long now = System.currentTimeMillis();
                 if(now >= startTime + 5000) {
                     orientationReadoutRoll.setText("Roll: " + (int) roll);
-                    orientationReadoutPitch.setText("Pitch: " + (int) pitch);
+                    orientationReadoutPitch.setText("Pitch: " + (int) pitch * (-1));
                 }
 
                 rollImg.setRotation((float)roll*(-1));
-                pitchImg.setRotation((float)pitch*(-1));
+                pitchImg.setRotation((float)pitch);
 
             }
         }

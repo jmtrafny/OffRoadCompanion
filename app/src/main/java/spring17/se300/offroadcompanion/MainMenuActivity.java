@@ -23,16 +23,12 @@ public class MainMenuActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-
         // Font path
         String fontPath = "fonts/Capture_it.ttf";
-
         // text view label
         TextView mmText = (TextView) findViewById(R.id.mainMenuText);
-
         // Loading Font Face
         Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
-
         // Applying font
         mmText.setTypeface(tf);
     }
